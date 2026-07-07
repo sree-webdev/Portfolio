@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sree S — Full Stack Python Developer, Data Analyst & Web Developer. Expert in Django, WordPress, Data Analysis, and Web Solutions.">
+  <title>Sree S | Python Developer, Data Analyst & Web Developer</title>
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <header>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">SREE S</a></div>
+
+        <div class="nav-right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education-skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- THEME TOGGLE -->
+          <div class="theme-toggle" id="themeToggle" title="Switch theme">
+            <button class="theme-toggle-btn active" id="btnLight">
+              <i class="ri-sun-line"></i>
+              <span>Light</span>
+            </button>
+            <button class="theme-toggle-btn" id="btnDark">
+              <i class="ri-moon-line"></i>
+              <span>Dark</span>
+            </button>
+          </div>
+
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- MOBILE SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">SREE S</span>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#home" class="sidebar-link" data-section="home"><i class="ri-home-4-line"></i><span>Home</span></a>
+      <a href="#about" class="sidebar-link" data-section="about"><i class="ri-user-3-line"></i><span>About</span></a>
+      <a href="#services" class="sidebar-link" data-section="services"><i
+          class="ri-briefcase-line"></i><span>Services</span></a>
+      <a href="#education-skills" class="sidebar-link" data-section="education-skills"><i
+          class="ri-book-2-line"></i><span>Skills</span></a>
+      <a href="#projects" class="sidebar-link" data-section="projects"><i
+          class="ri-code-box-line"></i><span>Projects</span></a>
+      <a href="#contact" class="sidebar-link" data-section="contact"><i
+          class="ri-mail-send-line"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-theme">
+      <p class="sidebar-theme-label">Switch Theme</p>
+      <div class="sidebar-theme-toggle">
+        <button class="sidebar-theme-btn active" id="sidebarBtnLight">
+          <i class="ri-sun-line"></i> Light
+        </button>
+        <button class="sidebar-theme-btn" id="sidebarBtnDark">
+          <i class="ri-moon-line"></i> Dark
+        </button>
+      </div>
+    </div>
+
+    <div class="sidebar-contact">
+      <a href="mailto:suresshsre33@gmail.com"><i class="ri-mail-line"></i> suresshsre33@gmail.com</a>
+      <a href="tel:+916379448409"><i class="ri-phone-line"></i> +91 63794 48409</a>
+    </div>
+
+    <div class="sidebar-socials">
+      <a href="https://github.com/sree-webdev" target="_blank"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/SREE37" target="_blank"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://www.instagram.com/sree__37" target="_blank"><i class="ri-instagram-fill"></i></a>
+      <a href="mailto:suresshsre33@gmail.com"><i class="ri-mail-fill"></i></a>
+    </div>
+
+    <a href="resume.pdf" target="_blank" class="sidebar-resume-btn">
+      <i class="ri-download-2-line"></i> Download Resume
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span></span>Available for full-time & freelance roles</p>
+        <h1 class="hero-title">Hello, I'm<br><span class="name">Sree S</span></h1>
+        <p class="hero-role"><span class="typed-text"></span><span class="cursor-blink">|</span></p>
+        <p class="hero-desc">I build fast, data-driven solutions and scalable web applications. Specialized in Python development, data analysis, and modern web technologies to help businesses make informed decisions.</p>
+        <div class="hero-actions">
+          <a href="resume.pdf" target="_blank" rel="noopener"><button class="btn-primary magnetic"><i
+                class="ri-download-2-line"></i> Resume</button></a>
+          <a href="#contact"><button class="btn-outline magnetic"><i class="ri-send-plane-line"></i> Hire
+              Me</button></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Tech Stack</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100" data-suffix="%">0%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img src="images/SREE IMG.jpeg" alt="Sree S - Web Developer">
+          <div class="img-shine"></div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-label">Status</div>
+          <div class="hero-badge-text">Open to Work ✦</div>
+        </div>
+        <div class="hero-badge-2"><i class="ri-shield-check-line"></i><span>Verified Developer</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="about-left reveal">
+        <div class="section-label"><span class="gold-line"></span>About Me</div>
+        <h2 class="section-heading">The person<br>behind the <em>code</em></h2>
+        <div class="divider"></div>
+        <p class="about-text">Versatile developer with a BCA degree from the University of Madras and proven expertise across multiple domains. Proficient in full-stack Python development, data analytics, WordPress development, and modern web technologies. Currently pursuing diverse opportunities in Data Analytics, Python Development, and Web Solutions.</p>
+        <p class="about-text">I excel at transforming complex data into actionable insights and building scalable applications. Whether it's analyzing datasets with Pandas, developing robust APIs with Django, or creating high-performance WordPress sites, I bring problem-solving mindset and attention to detail to every project.</p>
+        <div class="about-traits">
+          <div class="trait-row"><span class="trait-key">Primary Skills</span><span class="trait-val">Python, Django, Data Analysis, SQL</span></div>
+          <div class="trait-row"><span class="trait-key">Secondary Skills</span><span class="trait-val">WordPress, Web Dev, Data Viz</span></div>
+          <div class="trait-row"><span class="trait-key">Languages</span><span class="trait-val">English, Tamil</span>
+          </div>
+          <div class="trait-row"><span class="trait-key">Location</span><span class="trait-val">Chennai, Tamil Nadu, India</span></div>
+        </div>
+      </div>
+      <div class="about-right reveal reveal-delay-2">
+        <div class="about-card tilt-card">
+          <div class="about-card-glow"></div>
+          <div class="strengths-title">Core Strengths</div>
+          <div class="strength-item"><span class="strength-dot"></span>Data-Driven — extracts insights from complex datasets</div>
+          <div class="strength-item"><span class="strength-dot"></span>Full-Stack Expertise — Python, Frontend, Backend mastery</div>
+          <div class="strength-item"><span class="strength-dot"></span>Quick Learner — rapidly adapts to new tools and frameworks</div>
+          <div class="strength-item"><span class="strength-dot"></span>Collaborative — thrives in team environments</div>
+          <div class="strength-item"><span class="strength-dot"></span>Detail-Oriented — clean code, UX focus, attention to metrics
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="section-inner">
+      <div class="section-label reveal"><span class="gold-line"></span>What I Offer</div>
+      <h2 class="section-heading reveal">Freelance <em>Services</em></h2>
+      <div class="divider reveal"></div>
+      <div class="services-grid">
+        <div class="service-card tilt-card reveal">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap"><i class="ri-wordpress-line"></i></div>
+          <h3 class="service-title">WordPress Development</h3>
+          <p class="service-desc">Custom themes, plugins, WooCommerce stores, bug fixes, and full website builds
+            tailored to your brand.</p>
+          <ul class="service-list">
+            <li><i class="ri-checkbox-circle-line"></i> Custom theme design</li>
+            <li><i class="ri-checkbox-circle-line"></i> Plugin integration</li>
+            <li><i class="ri-checkbox-circle-line"></i> WooCommerce setup</li>
+            <li><i class="ri-checkbox-circle-line"></i> Bug fixing & maintenance</li>
+          </ul>
+          <div class="service-price">From ₹8,000</div>
+        </div>
+        <div class="service-card tilt-card reveal reveal-delay-1">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap"><i class="ri-shopping-cart-line"></i></div>
+          <h3 class="service-title">Ecom Website</h3>
+          <p class="service-desc">Complete e-commerce solutions with product catalogs, payment integration, inventory
+            management, and secure checkout flows.</p>
+          <ul class="service-list">
+            <li><i class="ri-checkbox-circle-line"></i> Product catalog setup</li>
+            <li><i class="ri-checkbox-circle-line"></i> Payment gateway integration</li>
+            <li><i class="ri-checkbox-circle-line"></i> Inventory management</li>
+            <li><i class="ri-checkbox-circle-line"></i> Secure checkout</li>
+          </ul>
+          <div class="service-price">From ₹20,000</div>
+        </div>
+        <div class="service-card tilt-card reveal reveal-delay-2">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap"><i class="ri-search-eye-line"></i></div>
+          <h3 class="service-title">SEO Optimisation</h3>
+          <p class="service-desc">Get your website ranking on Google's first page with proven on-page SEO strategies and
+            keyword optimisation.</p>
+          <ul class="service-list">
+            <li><i class="ri-checkbox-circle-line"></i> Keyword research</li>
+            <li><i class="ri-checkbox-circle-line"></i> On-page SEO setup</li>
+            <li><i class="ri-checkbox-circle-line"></i> Yoast / RankMath config</li>
+            <li><i class="ri-checkbox-circle-line"></i> Google Search Console</li>
+          </ul>
+          <div class="service-price">From ₹4,000</div>
+        </div>
+        <div class="service-card tilt-card reveal reveal-delay-3">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap"><i class="ri-speed-up-line"></i></div>
+          <h3 class="service-title">Speed Optimisation</h3>
+          <p class="service-desc">Achieve 90+ PageSpeed scores. Fast websites rank higher, convert better, and keep
+            visitors from bouncing.</p>
+          <ul class="service-list">
+            <li><i class="ri-checkbox-circle-line"></i> Core Web Vitals fix</li>
+            <li><i class="ri-checkbox-circle-line"></i> Image compression</li>
+            <li><i class="ri-checkbox-circle-line"></i> Caching setup</li>
+            <li><i class="ri-checkbox-circle-line"></i> CDN integration</li>
+          </ul>
+          <div class="service-price">From ₹2,500</div>
+        </div>
+        <div class="service-card tilt-card reveal reveal-delay-4">
+          <div class="service-card-glow"></div>
+         <div class="service-icon-wrap"><i class="ri-bar-chart-2-line"></i></div>
+         <h3 class="service-title">Data Analysis & Insights</h3>
+         <p class="service-desc">Transform raw data into actionable insights using Python, SQL, and visualization tools. Perfect for business intelligence and decision-making.</p>
+         <ul class="service-list">
+           <li><i class="ri-checkbox-circle-line"></i> Data wrangling & cleaning</li>
+           <li><i class="ri-checkbox-circle-line"></i> Statistical analysis</li>
+           <li><i class="ri-checkbox-circle-line"></i> Dashboard creation (Tableau, Power BI)</li>
+           <li><i class="ri-checkbox-circle-line"></i> Predictive modeling basics</li>
+         </ul>
+         <div class="service-price">From ₹10,000</div>
+        </div>
+        <div class="service-card tilt-card reveal reveal-delay-5">
+         <div class="service-card-glow"></div>
+         <div class="service-icon-wrap"><i class="ri-code-s-slash-line"></i></div>
+         <h3 class="service-title">Django Web Apps</h3>
+         <p class="service-desc">Custom Python/Django web applications with clean backends, REST APIs, and intuitive admin dashboards.</p>
+         <ul class="service-list">
+           <li><i class="ri-checkbox-circle-line"></i> Custom web apps</li>
+           <li><i class="ri-checkbox-circle-line"></i> REST API development</li>
+           <li><i class="ri-checkbox-circle-line"></i> Database design</li>
+           <li><i class="ri-checkbox-circle-line"></i> Admin dashboards</li>
+         </ul>
+         <div class="service-price">From ₹7,000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & SKILLS -->
+  <section id="education-skills" class="section">
+    <div class="section-inner">
+      <div class="section-label reveal"><span class="gold-line"></span>Background &amp; Expertise</div>
+      <h2 class="section-heading reveal">Education &amp; <em>Skills</em></h2>
+      <div class="divider reveal"></div>
+      <div class="edu-skill-grid">
+        <div class="education reveal">
+          <div class="strengths-title" style="margin-bottom:2rem">Academic Journey</div>
+          <div class="edu-list">
+            <div class="edu-item">
+              <div class="edu-degree">Python Full Stack Developer</div>
+              <div class="edu-institution">VYTCDC — Valasaravakkam, Chennai</div>
+              <span class="edu-year">Completed April 2025</span>
+            </div>
+            <div class="edu-item">
+              <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+              <div class="edu-institution">Alpha Arts &amp; Science College, Porur<br>University of Madras</div>
+              <span class="edu-year">2020 – 2023</span>
+            </div>
+            <div class="edu-item">
+              <div class="edu-degree">Higher Secondary (HSC)</div>
+              <div class="edu-institution">Padma Subramaniam Bala Bhavan Matric. Hr. Sec. School</div>
+              <span class="edu-year">2019 – 2020</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills reveal reveal-delay-2">
+          <div class="strengths-title" style="margin-bottom:2rem">Technical Skills</div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <div class="skill-group-title">Data Analysis</div>
+              <div class="skill-tags"><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span
+                  class="skill-tag">SQL</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span></div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-title">BI & Visualization</div>
+              <div class="skill-tags"><span class="skill-tag">Power BI</span><span class="skill-tag">Tableau</span><span
+                  class="skill-tag">Excel</span><span class="skill-tag">Google Sheets</span></div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-title">Frontend</div>
+              <div class="skill-tags"><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span
+                  class="skill-tag">JavaScript</span><span class="skill-tag">Bootstrap</span></div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-title">Backend</div>
+              <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Django</span><span
+                  class="skill-tag">PHP</span><span class="skill-tag">WordPress</span></div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-title">Database</div>
+              <div class="skill-tags"><span class="skill-tag">SQLite</span><span class="skill-tag">MySQL</span><span
+                  class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span></div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-title">SEO & Tools</div>
+              <div class="skill-tags"><span class="skill-tag">Yoast SEO</span><span class="skill-tag">Google Search
+                  Console</span><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-label reveal"><span class="gold-line"></span>Selected Work</div>
+      <h2 class="section-heading reveal">Featured <em>Projects</em></h2>
+      <div class="divider reveal"></div>
+      <div class="projects-grid">
+        <div class="project-card tilt-card reveal">
+          <div class="project-card-glow"></div>
+          <div class="project-number">01</div>
+          <div class="project-icon-row">
+            <span class="project-emoji">📚</span>
+            <a href="https://github.com/sree-webdev" target="_blank" class="project-link-btn"><i
+                class="ri-github-line"></i> Code</a>
+          </div>
+          <h3 class="project-title">Bookshelf — Library Management System</h3>
+          <p class="project-desc">A responsive library management system built with Django for efficient book tracking
+            and user management, with a user-friendly interface and seamless navigation.</p>
+          <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Django</span><span
+              class="stack-tag">HTML/CSS</span><span class="stack-tag">SQLite</span></div>
+        </div>
+        <div class="project-card tilt-card reveal reveal-delay-2">
+          <div class="project-card-glow"></div>
+          <div class="project-number">02</div>
+          <div class="project-icon-row">
+            <span class="project-emoji">🎓</span>
+            <a href="https://github.com/sree-webdev" target="_blank" class="project-link-btn"><i
+                class="ri-github-line"></i> Code</a>
+          </div>
+          <h3 class="project-title">SMS — Student Management System</h3>
+          <p class="project-desc">A Django-based system to manage student records with full CRUD operations, featuring a
+            responsive, intuitive interface to simplify data handling and reporting.</p>
+          <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Django</span><span
+              class="stack-tag">Bootstrap</span><span class="stack-tag">SQLite</span></div>
+        </div>
+        <div class="project-card tilt-card reveal reveal-delay-3">
+          <div class="project-card-glow"></div>
+          <div class="project-number">03</div>
+          <div class="project-icon-row">
+            <span class="project-emoji">📊</span>
+            <a href="https://github.com/sree-webdev" target="_blank" class="project-link-btn"><i
+                class="ri-github-line"></i> Code</a>
+          </div>
+          <h3 class="project-title">Sales Data Analysis & Insights</h3>
+          <p class="project-desc">Comprehensive analysis of sales datasets using Python, uncovering trends, patterns, and actionable insights with interactive visualizations for business decision-making.</p>
+          <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Pandas</span><span
+              class="stack-tag">Matplotlib</span><span class="stack-tag">SQL</span></div>
+        </div>
+        <div class="project-card tilt-card reveal reveal-delay-4">
+          <div class="project-card-glow"></div>
+          <div class="project-number">04</div>
+          <div class="project-icon-row">
+            <span class="project-emoji">📈</span>
+            <a href="https://github.com/sree-webdev" target="_blank" class="project-link-btn"><i
+                class="ri-github-line"></i> Code</a>
+          </div>
+          <h3 class="project-title">Customer Analytics Dashboard</h3>
+          <p class="project-desc">Interactive dashboard built with Python and Power BI/Tableau for real-time customer behavior analysis, segmentation, and retention metrics visualization.</p>
+          <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Power BI</span><span
+              class="stack-tag">SQL</span><span class="stack-tag">NumPy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label"><span class="gold-line"></span>Contact</div>
+        <h2 class="section-heading">Let's <em>connect</em></h2>
+        <div class="divider"></div>
+        <p class="contact-intro">I'm currently open to freelance projects and full-time opportunities. Whether you have
+          a project, a question, or just want to say hello — my inbox is always open.</p>
+        <div class="social-section">
+          <div class="social-title">Find me on</div>
+          <div class="social-links">
+            <a href="https://github.com/sree-webdev" target="_blank" rel="noopener" class="social-link"><i
+                class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/SREE37" target="_blank" rel="noopener" class="social-link"><i
+                class="ri-linkedin-fill"></i></a>
+            <a href="https://www.instagram.com/sree__37" target="_blank" rel="noopener" class="social-link"><i
+                class="ri-instagram-fill"></i></a>
+            <a href="mailto:suresshsre33@gmail.com" class="social-link"><i class="ri-mail-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-map-pin-2-line"></i></div>
+            <div class="contact-detail">
+              <div class="contact-type">Location</div>
+              <div class="contact-value">Mangadu, Chennai – 600122</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-phone-line"></i></div>
+            <div class="contact-detail">
+              <div class="contact-type">Phone</div>
+              <div class="contact-value"><a href="tel:+916379448409">+91 63794 48409</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-mail-line"></i></div>
+            <div class="contact-detail">
+              <div class="contact-type">Email</div>
+              <div class="contact-value"><a href="mailto:suresshsre33@gmail.com">suresshsre33@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-linkedin-line"></i></div>
+            <div class="contact-detail">
+              <div class="contact-type">LinkedIn</div>
+              <div class="contact-value"><a href="https://www.linkedin.com/in/SREE37"
+                  target="_blank">linkedin.com/in/SREE37</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Sree S. All rights reserved.</span>
+      <span class="footer-logo">SREE S</span>
+      <div class="footer-social">
+        <a href="https://github.com/sree-webdev" target="_blank"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/SREE37" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://www.instagram.com/sree__37" target="_blank"><i class="ri-instagram-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── THEME TOGGLE ── */
+    const btnLight = document.getElementById('btnLight');
+    const btnDark = document.getElementById('btnDark');
+
+    function setTheme(dark) {
+      if (dark) {
+        document.body.classList.add('dark');
+        btnDark.classList.add('active');
+        btnLight.classList.remove('active');
+        localStorage.setItem('sree-theme', 'dark');
+      } else {
+        document.body.classList.remove('dark');
+        btnLight.classList.add('active');
+        btnDark.classList.remove('active');
+        localStorage.setItem('sree-theme', 'light');
+      }
+      // update particle color on switch
+      updateParticleColor();
+    }
+
+    btnLight.addEventListener('click', () => setTheme(false));
+    btnDark.addEventListener('click', () => setTheme(true));
+
+    // Remember preference
+    if (localStorage.getItem('sree-theme') === 'dark') setTheme(true);
+
+    /* ── CUSTOM CURSOR ── */
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
+    (function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); })();
+    document.querySelectorAll('a,button,.tilt-card').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
+    });
+
+    /* ── PARTICLES ── */
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H;
+    const particles = [];
+    function resizeCanvas() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    for (let i = 0; i < 55; i++) particles.push({ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight, r: Math.random() * 1.4 + 0.3, dx: (Math.random() - .5) * 0.28, dy: (Math.random() - .5) * 0.28, o: Math.random() * 0.35 + 0.08 });
+
+    function getParticleRGB() { return document.body.classList.contains('dark') ? '201,168,76' : '37,99,235'; }
+    function updateParticleColor() { }
+
+    function drawP() {
+      ctx.clearRect(0, 0, W, H);
+      const rgb = getParticleRGB();
+      particles.forEach(p => {
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${rgb},${p.o})`; ctx.fill();
+        p.x += p.dx; p.y += p.dy;
+        if (p.x < 0 || p.x > W) p.dx *= -1;
+        if (p.y < 0 || p.y > H) p.dy *= -1;
+      });
+      requestAnimationFrame(drawP);
+    }
+    drawP();
+
+    /* ── TYPING ── */
+    const roles = ['Data Analyst', 'Python Developer', 'Full Stack Developer', 'Django Specialist', 'Web Developer', 'Data Scientist'];
+    let ri = 0, ci = 0, deleting = false;
+    const typedEl = document.querySelector('.typed-text');
+    function type() {
+      const cur = roles[ri];
+      if (!deleting) { typedEl.textContent = cur.slice(0, ++ci); if (ci === cur.length) { deleting = true; setTimeout(type, 1900); return; } }
+      else { typedEl.textContent = cur.slice(0, --ci); if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; } }
+      setTimeout(type, deleting ? 55 : 100);
+    }
+    type();
+
+    /* ── COUNTERS ── */
+    const cObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target, target = +el.dataset.count, suffix = el.dataset.suffix || '';
+        let cur = 0; const step = Math.ceil(target / 40);
+        const t = setInterval(() => { cur = Math.min(cur + step, target); el.textContent = cur + suffix; if (cur >= target) clearInterval(t); }, 40);
+        cObs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-number[data-count]').forEach(c => cObs.observe(c));
+
+    /* ── 3D TILT CARDS ── */
+    document.querySelectorAll('.tilt-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const rotX = ((e.clientY - r.top - r.height / 2) / r.height) * -9;
+        const rotY = ((e.clientX - r.left - r.width / 2) / r.width) * 9;
+        card.style.transform = `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-7px)`;
+        const glow = card.querySelector('[class$="-glow"]');
+        if (glow) { glow.style.left = (e.clientX - r.left) + 'px'; glow.style.top = (e.clientY - r.top) + 'px'; }
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+
+    /* ── MAGNETIC BUTTONS ── */
+    document.querySelectorAll('.magnetic').forEach(btn => {
+      btn.addEventListener('mousemove', e => { const r = btn.getBoundingClientRect(); btn.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * 0.22}px,${(e.clientY - r.top - r.height / 2) * 0.22}px)`; });
+      btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+    });
+
+    /* ── SCROLL REVEAL ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    /* ── ACTIVE NAV ── */
+    const secs = document.querySelectorAll('section[id]'), navLinks = document.querySelectorAll('nav ul li a');
+    window.addEventListener('scroll', () => {
+      let cur = ''; secs.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.getAttribute('id'); });
+      navLinks.forEach(l => { l.style.color = l.getAttribute('href') === '#' + cur ? 'var(--accent)' : ''; });
+      document.querySelector('nav').style.background = window.scrollY > 50 ? 'var(--nav-bg)'.replace('0.92', '0.98') : 'var(--nav-bg)';
+    }, { passive: true });
+
+    /* ── MOBILE SIDEBAR ── */
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const sidebarClose = document.getElementById('sidebarClose');
+    const sidebarBtnLight = document.getElementById('sidebarBtnLight');
+    const sidebarBtnDark = document.getElementById('sidebarBtnDark');
+
+    function openSidebar() {
+      sidebar.classList.add('open');
+      sidebarOverlay.classList.add('open');
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      sidebarOverlay.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => { sidebar.classList.contains('open') ? closeSidebar() : openSidebar(); });
+    sidebarClose.addEventListener('click', closeSidebar);
+    sidebarOverlay.addEventListener('click', closeSidebar);
+
+    document.querySelectorAll('.sidebar-link').forEach(l => l.addEventListener('click', closeSidebar));
+
+    // Sidebar theme buttons mirror the header toggle
+    sidebarBtnLight.addEventListener('click', () => { setTheme(false); syncSidebarTheme(); });
+    sidebarBtnDark.addEventListener('click', () => { setTheme(true); syncSidebarTheme(); });
+
+    function syncSidebarTheme() {
+      const dark = document.body.classList.contains('dark');
+      sidebarBtnDark.classList.toggle('active', dark);
+      sidebarBtnLight.classList.toggle('active', !dark);
+    }
+
+    // Keep sidebar theme buttons in sync when header toggle is clicked
+    btnLight.addEventListener('click', syncSidebarTheme);
+    btnDark.addEventListener('click', syncSidebarTheme);
+
+    // Close sidebar on resize to desktop
+    window.addEventListener('resize', () => { if (window.innerWidth > 768) closeSidebar(); });
+
+    // Highlight active sidebar link on scroll
+    window.addEventListener('scroll', () => {
+      let cur = ''; secs.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.getAttribute('id'); });
+      document.querySelectorAll('.sidebar-link').forEach(l => {
+        l.classList.toggle('active', l.getAttribute('data-section') === cur);
+      });
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>
