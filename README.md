@@ -23,17 +23,7 @@
 ![Repo stars](https://img.shields.io/github/stars/sree-webdev/SreePortfolio?style=for-the-badge&color=C9A84C)
 ![Last commit](https://img.shields.io/github/last-commit/sree-webdev/SreePortfolio?style=for-the-badge&color=2563EB)
 
----
 
-## 🎬 Live Preview
-
-<div align="center">
-<img src="public/assets/SREE%20IMG.jpeg" width="80%" alt="Portfolio preview" />
-
-**🔗 [View Live Site](#)** &nbsp;|&nbsp; **📄 [Download Resume](public/resumes/Sree_S_Resume.pdf)**
-</div>
-
----
 
 ## ✨ Features & Effects
 
